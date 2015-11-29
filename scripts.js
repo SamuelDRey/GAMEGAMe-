@@ -122,8 +122,14 @@ $(document).ready(function(){
 
 })
 
-
-
+var score = 0;
+function guess(playerGuess){
+  if (playerGuess === answer){
+    score= score + 1;
+     $('#scoreboard').text(score);
+      console.log(score);
+  }
+}
 
 
 
