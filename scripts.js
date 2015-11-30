@@ -73,20 +73,14 @@ var pictures = [
 "https://media2.giphy.com/media/zainSSjEMwOHe/200.gif", "https://media3.giphy.com/media/A9AlCLULGEVpe/200.gif",
 "https://media1.giphy.com/media/127h8dMHnk5H5C/200.gif", "https://media1.giphy.com/media/vAEuGaCUzM676/200.gif",
 "https://media1.giphy.com/media/5BdqG8zyAzr7W/200.gif", "https://media2.giphy.com/media/bSYfwd2fBTWmc/200.gif",
+"https://s3.amazonaws.com/rapgenius/funny-people-s-elbow-o.gif",
 ]
 
 var randomNumber = function(){
   return Math.floor(Math.random() *11);
 }
 
-//var checkAnswer(question, answer){
-  // if answer is right
-  //if (answer === question)
-  //return true;
-  // else
-  // if answer is wrong
-  //return false;
-//}
+
 
 $(document).ready(function(){
   $("#yes").on("click", function(){
@@ -130,9 +124,6 @@ function guess(playerGuess){
       console.log(score);
   }
 }
-
-
-
 
 
 
