@@ -42,7 +42,7 @@ function getMeAQuestionbro() {
 
 function getAnswer(question){
   var idx = questions.indexOf(question);
-  console.log(idx);
+  // console.log(idx);
   return answers[idx]
 }
 
@@ -90,9 +90,11 @@ $(document).ready(function(){
 
     if (answer === "yes"){
       $("#results").html("your Right" + "")
+      score++;
     } else {
       console.log('incorrect');
       $("#results").html("your Wrong Jabroni" + "")
+      score--;
     }
 
     $("#picId").attr("src", pictures[ randomNumber() ]);
@@ -105,9 +107,11 @@ $(document).ready(function(){
 
     if (answer === "no"){
       $("#results").html("your Right" + "")
+      score++;
     } else {
       console.log('incorrect');
       $("#results").html("your Wrong Jabroni" + "")
+      score--;
     }
 
     $("#picId").attr("src", pictures[ randomNumber() ]);
@@ -117,13 +121,13 @@ $(document).ready(function(){
 })
 
 var score = 0;
-function guess(playerGuess){
-  if (playerGuess === answer){
-    score= score + 1;
-     $('#scoreboard').text(score);
-      console.log(score);
-  }
-}
+// function guess(playerGuess){
+//   if (playerGuess === answer){
+//     score= score + 1;
+//      $('#scoreboard').text(score);
+//       console.log(score);
+//   }
+// }
 
 
 
